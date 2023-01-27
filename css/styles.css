@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #E0E4E5;
+}
+
+.container{
+    /*max-width: 1100px;*/
+    width: 90%;
+    margin: auto;
+}
+
+.container h1{
+    text-align: center;
+    font-weight: 400px;
+    margin: 15px 0px;
+    display: block;
+    border-bottom: 2px solid red;
+}
+
+.store-content{
+    display: flex;
+}
+
+.category-list{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+}
+
+.category-list .category_item{
+/*Using the display block i ordered the elements in a column*/
+    display: block;
+/*I USE 90% FOR GIVING THE CATEGORY_ITEM A LITTLE SEPARATION OF THE PRODUCT LIST*/
+    width: 90%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    background-color: #E84C3D;
+
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.products-list{
+    /*I USE 82% BECAUSE THE OTHER 18% OF THE CONTAINER WIDTH IS BEING USED FOR THE CATEGORY LIST*/
+        width: 82%;
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.products-list .product-item {
+    width: 22%;
+    margin-left: 3%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*I USE 100% BECAUSE IF I DONT , THE IMAGE GOES OUT OF HIS CONTAINER WHICH IS PRODUCT ITEM*/
+.products-list .product-item img{
+    width: 100%;
+}
+
+.products-list .product-item a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+
+    background: #2d3e50;
+    display: block;
+    width: 100%;
+    padding: 8px 0px;
+}
+
+.category-list .ct_item-active{
+    background: #2d3e50;
+}
